@@ -5,11 +5,8 @@ int main(){
    cin>>t;
    while(t--){
        cin>>a>>b>>c>>k;
-       ct=0;
+       ct=(a<k)?((b<k)?((c<k)?3:2):1):0;
        cout<<"Case "<<i++<<": ";
-       if(a<k) ct++;
-       if(b<k) ct++;
-       if(c<k) ct++;
        if(a==b && b==c) cout<<"Peaceful"<<endl;
        else if(ct>=2) cout<<"Fight"<<endl;
        else {
